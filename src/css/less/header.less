@@ -1,0 +1,337 @@
+.header {
+	padding: 15px 0 0 0;
+	@media @tablet {
+
+	}
+
+}
+
+.header-logo-cnt {
+	max-width: 210px;
+	margin: 0 auto;
+
+	@media @tablet {
+		margin: 0;
+	}
+}
+
+.header-logo{
+	width: 100%;
+	margin: 0;
+	text-align: center;
+
+	& a:hover,
+	 a:active, 
+	 a:visited,
+	 a:focus{
+		text-decoration: none;
+	}
+}
+
+.header-logo__str-1 {
+	color: #c7a900;
+	font-family: "Edwardian Script ITC";
+	font-size: 71px;
+	line-height: 1;
+	margin-left: -20px;
+}
+
+.header-logo__str-2 {
+	color: #1c285b;
+	font-family: "Century Gothic";
+	font-size: 23px;
+	line-height: 2;
+	text-transform: uppercase;
+	letter-spacing: 3px;	
+}
+
+.navbar-default.header-navbar{
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	margin-top: 77px;
+	margin-bottom: 20px;
+
+	@media @tablet{
+		width: auto;
+		position: relative;
+	}
+}
+
+.header-cont {
+	vertical-align: middle;
+	margin-top: 67px;
+	text-align: center;
+
+	@media @tablet {
+		text-align: left;
+	}
+}
+
+.header-cont__tel-link{
+	color: #1d275a;
+	font-family: "Lucida Grande";
+	font-size: 18px;
+	line-height: 15px;
+	text-decoration: none;
+	vertical-align: middle;
+
+	& u {
+		color: #1c285b;
+		font-family: "Futura BT";
+		font-size: 26px;
+		font-weight: 500;
+		line-height: 31px;
+		text-transform: uppercase;
+		text-decoration: none;
+		margin-right: 22px;
+		vertical-align: sub;
+	}
+
+	&:hover,
+	 :active, 
+	 :visited,
+	 :focus{
+		text-decoration: none;
+	}
+}
+.btn.header-cont__btn{
+	width: 149px;
+	height: 32px;
+	border-radius: 1px;
+	background-color: #1d275a;
+	color: #ffffff;
+	font-family: "Futura BT Light";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 18px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+
+	@media @tablet {
+		display: inline-block;
+		margin: 0;
+	}
+
+	&:hover,
+	 :active, 
+	 :visited,
+	 :focus{
+		color: #ffffff;
+	}
+}
+
+.header-navbar-collapse {
+	@media @tablet {
+		padding: 0;
+	}
+}
+
+.header-navbar {
+	position: relative;
+	min-height: auto;
+
+	&::before {
+		content: '';
+		width: 100%;
+		height: 6px;
+		position: absolute;
+		top: -26px;
+		border: 1px solid #e3ded9;
+		border-left: none;
+		border-right: none;
+	}
+}
+
+
+
+.navbar-nav .header-navbar__item {
+	font-family: "Futura BT Light";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #5a5a5a;
+
+	text-align: center;
+
+	@media @tablet {
+		text-align: center;
+	}
+	
+	position: relative;
+
+	&:hover>li>a {
+		color: #1c285b;
+	}
+
+	& a {
+		padding: 0;	
+		@media @tablet{
+			margin: 0 5px;			
+		}
+		@media @laptop{
+			margin: 0 15px;
+		}
+		
+	
+	}	
+
+	&:first-child a{
+
+		@media @tablet {
+			margin-left: 0;	
+		}
+		
+	}
+	&:last-child a{
+
+		@media @tablet {
+			margin-right: 0;	
+		}
+		
+	}
+
+	&.active>a:first-child {
+		background-color: transparent;
+		color: #1c285b;
+
+		&:hover,
+		:active, 
+		:visited,
+		:focus{
+			background-color: transparent;
+			color: #1c285b;
+		}
+
+		&::before {
+
+			@media @tablet {
+				content: '';
+				width: 100%;
+				height: 4px;
+				position: absolute;
+				top: -25px;
+				background-color: #17225a;
+			}
+		}
+	}
+
+
+
+	@media @tablet {
+	}
+	
+}
+ 
+
+.header__btn-cnt {
+	display: block;
+	width: 100%;
+
+	@media @tablet {
+		width: initial;
+		text-align: center;
+		margin-top: 30px;
+		float: left;	
+	}
+
+	@media @laptop {
+		float: right;
+	}
+	
+}
+
+.header__btn {
+	width: 245px;
+	height: 45px;
+	border-radius: 22px;
+	background-color: #fff;
+	color: #f9bf3a;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.83;
+	margin: 0 auto; 
+    display: block;
+
+	@media @tablet {
+		display: inline-block;
+		margin: initial;
+	}
+
+	&:hover,
+	&:active,
+	&:focus{
+		color: darken(#f9bf3a, 15%);
+	}
+}
+
+.navbar-nav .dropdown-menu.header-dropdown-menu {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.37);
+	background-color: #17225a;
+	padding: 20px 60px 20px 25px;	
+	border-radius: 0;
+	border: none;
+	margin-top: 20px;
+	text-align: center;
+	@media @tablet {
+		text-align: left;
+	}
+
+
+	& li a {
+		font-family: "Futura BT Light";
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 25px;
+		text-transform: none;
+		color: #e2ddd8;
+
+		&:hover {
+			color: #c4ab2e;	
+			background-color: transparent;
+		}
+	}
+}
+
+.img-preview {
+	
+	@media @tablet{
+		&:hover::before {
+			content: '';
+			position: absolute;
+			left: 100%;
+			top: 0;
+			width: 142px;
+			height: 100%;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.37);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: right;
+		}
+	}
+	
+}
+
+.img-preview-1 {
+	@media @tablet{
+		&:hover::before {
+			background-image: url(../../img/dsg/bg/img-preview-1.png);
+		}
+	}
+}
+
+
+.header-banner {
+	width: 100%;
+	height: 235px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../../img/dsg/bg/banner.png);
+}
+
+
