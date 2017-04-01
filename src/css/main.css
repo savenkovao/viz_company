@@ -641,6 +641,18 @@ body {
   font-family: "Lucida Grande";
   color: #959595;
   font-size: 13px;
+  padding-top: 63px;
+  position: relative;
+}
+.footer-nav_block::before {
+  content: '';
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  top: 0;
+  border: 1px solid #e3ded9;
+  border-left: none;
+  border-right: none;
 }
 .footer__sub-hdr {
   margin: 0;
@@ -858,7 +870,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .footer-line {
-    margin-top: 0;
+    margin-top: 55px;
   }
 }
 .footer-line__txt-cont {
@@ -895,4 +907,58 @@ body {
   content: '|';
   position: relative;
   left: 5px;
+}
+.footer-lnk-block {
+  background-color: white;
+  padding: 10px 20px;
+  position: absolute;
+  top: -20px;
+  left: -webkit-calc(50% - 88px);
+  left: calc(50% - 88px);
+}
+.footer-lnk__lnk {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 100px;
+  margin-right: 13px;
+}
+.footer-lnk__lnk:last-child {
+  margin-right: 0;
+}
+.footer-lnk__lnk-f {
+  background-image: url(../img/dsg/social-lk.png);
+  width: 15px;
+  height: 25px;
+  background-position: 0 0;
+}
+.footer-lnk__lnk-f:hover {
+  background-position: 0 26px;
+}
+.footer-lnk__lnk-p {
+  background-image: url(../img/dsg/social-lk.png);
+  width: 20px;
+  height: 25px;
+  background-position: -20px 0;
+}
+.footer-lnk__lnk-p:hover {
+  background-position: -20px 27px;
+}
+.footer-lnk__lnk-l {
+  background-image: url(../img/dsg/social-lk.png);
+  width: 23px;
+  height: 25px;
+  background-position: -43px 0;
+}
+.footer-lnk__lnk-l:hover {
+  background-position: -43px 28px;
+}
+.footer-lnk__lnk-t {
+  background-image: url(../img/dsg/social-lk.png);
+  width: 27px;
+  height: 24px;
+  background-position: -71px 0;
+}
+.footer-lnk__lnk-t:hover {
+  background-position: -71px 28px;
 }
