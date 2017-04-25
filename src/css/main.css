@@ -431,14 +431,12 @@ body {
 @media only screen and (min-width: 768px) {
   .main-carousel__control {
     border: 47px solid transparent;
-    top: -webkit-calc(50% - 47px);
     top: calc(50% - 47px);
   }
 }
 @media only screen and (min-width: 992px) {
   .main-carousel__control {
     border: 47px solid transparent;
-    top: -webkit-calc(50% - 47px);
     top: calc(50% - 47px);
   }
 }
@@ -447,7 +445,6 @@ body {
   width: 14px;
   height: 35px;
   position: absolute;
-  top: -webkit-calc(50% - 17px);
   top: calc(50% - 17px);
   background-image: url(../img/dsg/arrw.png);
   background-repeat: no-repeat;
@@ -539,6 +536,7 @@ body {
   background-color: #8a8a8a;
   width: 80%;
   margin: 0 auto;
+  min-height: 150px;
 }
 @media only screen and (min-width: 768px) {
   .main-adv__cont {
@@ -556,7 +554,6 @@ body {
   bottom: 0;
   left: 0;
   background-color: rgba(21, 36, 91, 0.6);
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   color: transparent;
   z-index: 1;
@@ -752,15 +749,9 @@ body {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
-  -webkit-column-width: auto;
-     -moz-column-width: auto;
-          column-width: auto;
+  column-count: 2;
+  column-gap: 10px;
+  column-width: auto;
   max-width: 300px;
 }
 @media only screen and (min-width: 768px) {
@@ -834,21 +825,6 @@ body {
   color: #959595;
   width: 250px;
 }
-.form-control.footer-form__input::-webkit-input-placeholder {
-  color: #959595;
-  font-size: 13px;
-  line-height: 22px;
-}
-.form-control.footer-form__input::-moz-placeholder {
-  color: #959595;
-  font-size: 13px;
-  line-height: 22px;
-}
-.form-control.footer-form__input:-ms-input-placeholder {
-  color: #959595;
-  font-size: 13px;
-  line-height: 22px;
-}
 .form-control.footer-form__input::placeholder {
   color: #959595;
   font-size: 13px;
@@ -913,7 +889,6 @@ body {
   padding: 10px 20px;
   position: absolute;
   top: -20px;
-  left: -webkit-calc(50% - 88px);
   left: calc(50% - 88px);
 }
 .footer-lnk__lnk {
